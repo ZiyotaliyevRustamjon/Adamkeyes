@@ -1,0 +1,296 @@
+// partials imports
+@import "./partials/fonts"; // fonts
+@import "./partials/reset"; // reset
+@import "./partials/veriables"; // color Verialbles
+@import "./partials/media"; // Media Queris
+
+body {
+    background-color: $bgColor;
+    font-family: $siteFont;
+}
+
+#boxContainer {
+    display: none;
+}
+
+// loading
+.loading {
+    width: 100%;
+    height: 100vh;
+    background-color: #ECF0F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loadingGif {
+        width: 20%;
+    }
+}
+
+// Container Bar
+.container {
+
+    // Header bar
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 80px;
+        position: relative;
+
+        // Logo
+        .logo {
+            .logoTitle {
+                color: $logoColor;
+                text-decoration: none;
+            }
+        }
+
+        // NavBar
+        .navBar {
+            a {
+                font-size: 25px;
+                color: $logoColor;
+                text-decoration: none;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    // sectionGet
+    .sectionGet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 80px;
+        position: relative;
+
+        // Title Bar
+        .titleBar {
+
+            // Site Line
+            .siteLine {
+                width: 400px;
+                height: 110px;
+                position: absolute;
+                background-image: url("../img/siteLine.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: 100px;
+                left: 0;
+            }
+
+            // Site Title
+            .section1Title {
+                font-size: 83px;
+                position: absolute;
+                color: $logoColor;
+                margin-top: 150px;
+                line-height: 90px;
+
+                span {
+                    border-bottom: 4px solid $borderColor;
+                }
+            }
+
+            // Site text
+            .section1Text {
+                color: $textColor;
+
+                margin-top: 410px;
+                font-size: 20px;
+            }
+
+            // section1Btn
+            .section1Btn {
+                text-decoration: none;
+                color: $logoColor;
+                position: absolute;
+                border-bottom: 2px solid $borderColor;
+                top: 560px;
+            }
+        }
+
+        // imgBar
+        .imgBar {
+            width: 45%;
+
+            .profilImage {
+                width: 39%;
+                position: absolute;
+                top: -60px;
+                z-index: -1;
+            }
+
+            .circle {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                border: 1px solid $logoColor;
+                position: absolute;
+                top: 610px;
+                left: 674px;
+            }
+        }
+    }
+
+    // site Line
+    .siteLine2 {
+        width: 90%;
+        height: 1px;
+        background-color: $logoColor;
+        margin: auto;
+        margin-top: 380px;
+    }
+
+    // site texno
+    .siteTexno {
+        .textnoBar1 {
+            margin: auto;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-top: 70px;
+
+            .textnos {
+                width: 33.3%;
+                position: relative;
+
+                h1 {
+                    color: $logoColor;
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 15px;
+                    color: $textColor;
+                }
+            }
+        }
+
+        .textnoLine {
+            width: 400px;
+            height: 90px;
+            position: absolute;
+            background-image: url("../img/siteLine.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 1150px;
+            transform: rotate(180deg);
+            right: 0;
+        }
+    }
+
+    // projets
+    .projets {
+        margin-top: 150px;
+        padding: 0px 70px;
+
+        .projectsTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-size: 50px;
+                color: $logoColor;
+            }
+
+            a {
+                color: $textColor;
+                text-decoration: none;
+                font-size: 16px;
+                border-bottom: 2px solid $borderColor;
+            }
+        }
+
+        .projectBar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 50px;
+
+            .project1 {
+                width: 550px;
+
+                img {
+                    width: 100%;
+
+                    &:hover {
+                        opacity: 0.5;
+                        cursor: pointer;
+                    }
+                }
+
+                h1 {
+                    font-size: 24px;
+                    color: $logoColor;
+                }
+
+                h4 {
+                    color: $textColor;
+                }
+            }
+
+            .project2 {
+                width: 550px;
+
+                img {
+                    width: 100%;
+
+                    &:hover {
+                        opacity: 0.5;
+                        cursor: pointer;
+                    }
+                }
+
+                h1 {
+                    color: $logoColor;
+                    font-size: 20px;
+                }
+
+                h4 {
+                    color: $textColor;
+                }
+            }
+        }
+    }
+
+    // Footer
+    footer {
+        padding: 40px 80px;
+        margin-top: 50px;
+        background-color: $footerColor;
+
+        .contacts {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .titleBar1 {
+                h1 {
+                    font-size: 60px;
+                    color: $logoColor;
+                }
+
+                p {
+                    color: $textColor;
+                    margin-top: 30px;
+                }
+            }
+
+            .formas {
+                input {
+                    width: 400px;
+                    height: 40px;
+                    background: none;
+                    border: none;
+                    border-bottom: 2px solid $borderColor;
+                }
+            }
+        }
+    }
+}
